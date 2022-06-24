@@ -32,7 +32,7 @@ export interface IDay {
     date: TDate
     selected: boolean
     today: boolean
-    changeStatus():void
+    setSelected(status:boolean):void
 }
 
 class Day implements IDay {
@@ -42,8 +42,8 @@ class Day implements IDay {
         public selected:boolean,
         public today:boolean){}
 
-    public changeStatus():void {
-        this.selected = !this.selected
+    public setSelected(status:boolean):void {
+        this.selected = status
     }
 }
 

@@ -8,7 +8,7 @@ type Props = {
 
 export const Day: FC<Props> = ({ Day }) => {
 
-  const {day,date,selected,today,changeStatus} = Day;
+  const {day,date,selected,today,setSelected} = Day;
 
   useEffect(() => {
     console.log(Day)
@@ -18,7 +18,7 @@ export const Day: FC<Props> = ({ Day }) => {
   return (
     <>
       <div 
-        onClick={()=>changeStatus()}
+        onClick={()=>setSelected(!selected)}
         className={`dayContainer ${today&&`today`} ${selected&&`selected`}`}
       >
         <p>{day}</p>
