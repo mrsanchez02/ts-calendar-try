@@ -1,3 +1,12 @@
+:root{
+  --darken: rgb(40, 44, 52);
+  --gray: rgb(121,121,121);
+  --white: rgb(225,225,225);
+  --green: rgb(52, 235, 128);
+  --blue: rgb(56, 96, 175);
+  --red: rgb(175, 56, 64);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +15,4 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
